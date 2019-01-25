@@ -1,0 +1,25 @@
+title: cat_print_test
+tags: cat
+colorID: 0
+position: 522,132
+---
+Cat: Sup, print testing.
+<<DebugPrint Cat hello_world>>
+<<stop>>
+===
+title: cat_item_Seed
+tags: cat
+colorID: 0
+position: 918,227
+---
+I see you have the seed.
+<<stop>>
+===
+title: cat_item_NotFound
+tags: cat
+colorID: 0
+position: 675,367
+---
+I don't have information on that item. (Item not found in Yarn file.)
+<<stop>>
+===

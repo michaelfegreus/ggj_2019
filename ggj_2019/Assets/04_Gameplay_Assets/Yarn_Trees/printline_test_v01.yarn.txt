@@ -1,0 +1,9 @@
+title: cat_print_test
+tags: cat
+colorID: 0
+position: 540,260
+---
+Cat: Sup, print testing.
+<<DebugPrint Cat hello_world>>
+<<stop>>
+===

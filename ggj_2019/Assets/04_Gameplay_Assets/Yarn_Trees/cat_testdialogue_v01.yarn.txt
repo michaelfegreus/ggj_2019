@@ -1,0 +1,73 @@
+title: cat_introduction
+tags: cat
+colorID: 0
+position: 563,29
+---
+<<set $plant_seed = true>>
+<<set $morale = 5>>
+<<set $cat_patience = 5>>
+
+Cat: Hey, your that human.
+Cat: The one living in the old house.
+Cat: Don't make a mess of it, punk.
+
+[[Who are you|cat_greet]]
+[[Thanks?|cat_greet]]
+===
+title: cat_greet
+tags: cat
+colorID: 0
+position: 561,272
+---
+<<if $cat_patience = 0>>
+    Cat: Tch. Waste of time.
+    [[cat_zero_patience]]
+<<endif>>
+Cat: Tch, loser.
+->You don't have to be so mean everytime we talk.
+    Cat: But watching you squirm in your boots is just so...
+    Cat: It feels good.
+    -> Well fuck you too, buddy.
+        Cat: Yeah, that's what I thought. You don't have it in you to get through this dialogue tree.
+        <<set $cat_patience = $cat_patience - 5>>
+    -> I'm just trying to help out.
+        Cat: Oh yeah, help with this then.
+        <<set $plant_seed = false>>
+        The cat hands you a strange looking seed.
+        Vivarium Girl: What is this?
+        <<print Cat called_from_yarn>>
+        Cat: ...
+-> Hey cat...creature.
+    Cat: You got a problem with Anthro-creatures?
+-> What do I call you then?
+    Cat: Your creative, think of something.
+-> ... 
+    Cat: Giving me the silent treatment. Kid, I invented the silent treatment.
+    [[cat_silence]]
+[[Continue Talking|cat_greet]]
+===
+title: cat_silence
+tags: cat
+colorID: 0
+position: 854,364
+---
+The cat stares at the forest.
+-> Keep Pressing
+    The cat looks at the floor.
+    -> Keep Staring At Her
+        The cat looks away from you, uncomfortably.
+        -> Stare at her piercing, jade eyes...
+            Cat: OKAY FUCK I GET IT.
+            Cat: Peace out, weirdo.
+            <<print Cat we_did_the_thing_we_wanted_to,_it_worked>>
+            <<stop>>
+===
+title: cat_zero_patience
+tags: cat
+colorID: 0
+position: 182,323
+---
+The cat leaps into the trees, and vanishes into the forest. You hear a soft chuckles echo through the leaves.
+-> She must have gotten impatient.
+<<stop>>
+===

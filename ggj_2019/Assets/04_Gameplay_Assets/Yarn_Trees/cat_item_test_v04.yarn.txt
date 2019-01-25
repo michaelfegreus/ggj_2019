@@ -1,0 +1,67 @@
+title: cat_print_test
+tags: cat
+colorID: 0
+position: 378,-34
+---
+<<set $playerHasItem_Seed = false>>
+
+Cat: Hello, I'm printing a debug line and also searching for the seed item.
+[[cat_continue]]
+===
+title: cat_item_Seed
+tags: cat
+colorID: 0
+position: 1177,219
+---
+I see you have the seed.
+<<stop>>
+===
+title: cat_item_NotFound
+tags: cat
+colorID: 0
+position: 1194,450
+---
+I don't have information on that item. (Item not found in Yarn file.)
+<<stop>>
+===
+title: cat_see_seed
+tags: cat
+colorID: 0
+position: 117,740
+---
+Nice, you got the seed!
+<<stop>>
+===
+title: cat_continue
+tags: cat
+colorID: 0
+position: 376,228
+---
+<<CheckPlayerInventoryForItem Cat Seed>>
+
+Hmm...
+
+[[cat_seed_results]]
+===
+title: cat_end
+tags: cat
+colorID: 0
+position: 699,721
+---
+<<if $playerHasItem_Seed>>
+    Yeah, you've got the seed!
+<<else>>
+    Well it would be nice if this worked. Maybe setting variables like this in Yarn is too much trouble.
+<<endif>>
+
+<<stop>>
+===
+title: cat_seed_results
+tags: cat
+colorID: 0
+position: 385,456
+---
+Well let's see.
+
+[[cat_end]]
+===

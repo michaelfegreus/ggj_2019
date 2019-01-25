@@ -1,0 +1,44 @@
+title: cat_print_test
+tags: cat
+colorID: 0
+position: 387,-61
+---
+<<if $playerHasItem_Seed != true>>
+    <<set $playerHasItem_Seed = false>>
+<<endif>>
+
+<<if $playerHasItem_Seed is true>>
+    Nice you got the seed!
+<<endif>>
+
+Cat: Hello, I'm printing a debug line and also searching for the seed item.
+<<CheckPlayerInventoryForItem Cat Seed>>
+<<if $playerHasItem_Seed is true>>
+    Yep, I see you've got the seed!
+<<endif>>
+<<stop>>
+===
+title: cat_item_Seed
+tags: cat
+colorID: 0
+position: 918,227
+---
+I see you have the seed.
+<<stop>>
+===
+title: cat_item_NotFound
+tags: cat
+colorID: 0
+position: 675,367
+---
+I don't have information on that item. (Item not found in Yarn file.)
+<<stop>>
+===
+title: cat_see_seed
+tags: cat
+colorID: 0
+position: 737,52
+---
+Nice, you got the seed!
+<<stop>>
+===
