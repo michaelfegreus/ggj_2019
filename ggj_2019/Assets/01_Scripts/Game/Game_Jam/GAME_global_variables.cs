@@ -9,10 +9,6 @@ public class GAME_global_variables : MonoBehaviour {
 	public int alcoholPoints;
 	public int confidencePoints;
 
-	void Start(){
-		AddConfidencePoints ("-10");
-	}
-
 	// Yarn commands ahead:
 
 	// Add a certain amount of alcohol points based on a value specified in Yarn
