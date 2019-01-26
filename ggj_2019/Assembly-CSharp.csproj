@@ -66,6 +66,7 @@
      <Compile Include="Assets\01_Scripts\Game\GAME_manager_loader.cs" />
      <Compile Include="Assets\01_Scripts\Game\GAME_menu_manager.cs" />
      <Compile Include="Assets\01_Scripts\Game\GAME_textbox_manager.cs" />
+     <Compile Include="Assets\01_Scripts\Game\GAME_titlescreen_manager.cs" />
      <Compile Include="Assets\01_Scripts\Game\GameManagerStates\GAME_STATE_Free.cs" />
      <Compile Include="Assets\01_Scripts\Game\GameManagerStates\GAME_STATE_Paused.cs" />
      <Compile Include="Assets\01_Scripts\Game\YARN_ui_manager.cs" />
