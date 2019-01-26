@@ -46,12 +46,13 @@ public class PLAYER_STATE_FreeControl : IState {
 		} else {
 			movementScript.SetDashInput (false);
 		}
-
 	}
 
 	public void Exit(){		
 		// Reset analog stick input when exiting FreeControl state.
 		movementScript.SetMovementInput(0f, 0f, 0f, 0f);
+
+		Debug.Log ("Trying to reset analog input here.");
 	}
 
 }

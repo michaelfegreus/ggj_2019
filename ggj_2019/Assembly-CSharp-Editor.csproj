@@ -290,16 +290,16 @@
  <HintPath>/Applications/Unity/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll</HintPath>
  </Reference>
  <Reference Include="Pathfinding.Ionic.Zip.Reduced">
- <HintPath>/Users/michael/Documents/GGJ2019/ggj_2019/Assets/AstarPathfindingProject/Plugins/DotNetZip/Pathfinding.Ionic.Zip.Reduced.dll</HintPath>
+ <HintPath>/Users/michael/Documents/GGJ/ggj_2019/Assets/AstarPathfindingProject/Plugins/DotNetZip/Pathfinding.Ionic.Zip.Reduced.dll</HintPath>
  </Reference>
  <Reference Include="Antlr4.Runtime.Standard">
- <HintPath>/Users/michael/Documents/GGJ2019/ggj_2019/Assets/YarnSpinner/Code/Antlr4.Runtime.Standard.dll</HintPath>
+ <HintPath>/Users/michael/Documents/GGJ/ggj_2019/Assets/YarnSpinner/Code/Antlr4.Runtime.Standard.dll</HintPath>
  </Reference>
  <Reference Include="CsvHelper">
- <HintPath>/Users/michael/Documents/GGJ2019/ggj_2019/Assets/YarnSpinner/Code/CsvHelper.dll</HintPath>
+ <HintPath>/Users/michael/Documents/GGJ/ggj_2019/Assets/YarnSpinner/Code/CsvHelper.dll</HintPath>
  </Reference>
  <Reference Include="YarnSpinner">
- <HintPath>/Users/michael/Documents/GGJ2019/ggj_2019/Assets/YarnSpinner/Code/YarnSpinner.dll</HintPath>
+ <HintPath>/Users/michael/Documents/GGJ/ggj_2019/Assets/YarnSpinner/Code/YarnSpinner.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.Advertisements">
  <HintPath>/Users/michael/Library/Unity/cache/packages/packages.unity.com/com.unity.ads@1.0.7/Editor/UnityEditor.Advertisements.dll</HintPath>

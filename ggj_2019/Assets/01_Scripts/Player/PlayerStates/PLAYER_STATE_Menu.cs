@@ -5,9 +5,13 @@ public class PLAYER_STATE_Menu : IState {
 
 	private GameObject playerObject;
 
+	PLAYER_movement_directional_2d movementScript;
+
 	// Constructor:
 	public PLAYER_STATE_Menu(GameObject player){
 		playerObject = player;
+		movementScript = playerObject.GetComponent<PLAYER_movement_directional_2d>();
+
 	}
 
 	public void Enter(){
@@ -17,6 +21,7 @@ public class PLAYER_STATE_Menu : IState {
 	}
 
 	public void Execute(){
+		movementScript.SetMovementInput(0f, 0f, 0f, 0f);
 	}
 
 	public void Exit(){

@@ -57,6 +57,8 @@ public class PLAYER_movement_directional_2d : MonoBehaviour {
 
 		// Send information about movement to the animator every frame.
 		PLAYER_manager.Instance.playerAnimation.SetMovement(directionInput, new Vector2(inputX, inputY), inputDeadzoneThreshold);
+
+	//	Debug.Log ("X:" + inputX + "Y:" + inputY);
 	}
 
 	void FixedUpdate (){

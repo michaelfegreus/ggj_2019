@@ -1,1 +1,4 @@
-sceneSetups: []
+sceneSetups:
+- path: Assets/03_Scenes/Game_Jam/setup_v02.unity
+  isLoaded: 1
+  isActive: 1

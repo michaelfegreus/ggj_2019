@@ -1,11 +1,12 @@
 ﻿using UnityEngine;
 
 [RequireComponent(typeof(GAME_input_manager))]
-[RequireComponent(typeof(GAME_inventory_manager))]
+//[RequireComponent(typeof(GAME_inventory_manager))]
 [RequireComponent(typeof(GAME_menu_manager))]
 [RequireComponent(typeof(Yarn.Unity.DialogueRunner))] // Yarn component
 [RequireComponent(typeof(ExampleVariableStorage))] // Yarn component
 [RequireComponent(typeof(YARN_ui_manager))] // Yarn component
+[RequireComponent(typeof(GAME_global_variables))] // GGJ2019 game state variabes
 
 public class GAME_manager : SingletonPersistant<GAME_manager> {
 
@@ -27,8 +28,8 @@ public class GAME_manager : SingletonPersistant<GAME_manager> {
 	// Set up components
 	[System.NonSerialized]
 	public GAME_input_manager inputManager;
-	[System.NonSerialized]
-	public GAME_inventory_manager inventoryManager;
+	//[System.NonSerialized]
+	//public GAME_inventory_manager inventoryManager;
 	[System.NonSerialized]
 	public GAME_menu_manager menuManager;
 	[System.NonSerialized]
@@ -42,7 +43,7 @@ public class GAME_manager : SingletonPersistant<GAME_manager> {
 		EnterFreeState ();
 
 		inputManager = GetComponent<GAME_input_manager> ();
-		inventoryManager = GetComponent<GAME_inventory_manager> ();
+		//inventoryManager = GetComponent<GAME_inventory_manager> ();
 		menuManager = GetComponent<GAME_menu_manager> ();
 		dialogRunner = GetComponent<Yarn.Unity.DialogueRunner> ();
 		variableStorageManager = GetComponent<ExampleVariableStorage> ();
