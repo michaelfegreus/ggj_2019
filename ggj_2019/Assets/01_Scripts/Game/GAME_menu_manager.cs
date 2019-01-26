@@ -91,6 +91,8 @@ public class GAME_menu_manager : Singleton<GAME_menu_manager>  {
 		float inputThreshold = .2f; // Deadzone threshold for pushing the analog stick. Used in the next block.
 
 		float inputY = Input.GetAxis("VerticalDigital");
+
+
 		// Override with analog stick movement if the analog stick is pushed on the same frame.
 		if(Mathf.Abs(Input.GetAxis("VerticalAnalog")) > inputThreshold){
 			inputY = Input.GetAxis("VerticalAnalog");
@@ -127,6 +129,10 @@ public class GAME_menu_manager : Singleton<GAME_menu_manager>  {
 		} else if (inputY < inputThreshold && inputY > -inputThreshold) {
 			cursorMove = false;
 		}
+
+		//Debug.Log ("Cursor index: " + cursorIndex);
+
+	//	Debug.Log ("Input Y: " + inputY);
 	}
 
 	// Updates the current index of the cursor.

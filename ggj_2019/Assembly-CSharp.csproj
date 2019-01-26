@@ -59,6 +59,7 @@
      <Compile Include="Assets\01_Scripts\Classes_Base\SingletonPersistant.cs" />
      <Compile Include="Assets\01_Scripts\Classes_Generic\Inventory.cs" />
      <Compile Include="Assets\01_Scripts\Game\GAME_camera_manager.cs" />
+     <Compile Include="Assets\01_Scripts\Game\GAME_global_variables.cs" />
      <Compile Include="Assets\01_Scripts\Game\GAME_input_manager.cs" />
      <Compile Include="Assets\01_Scripts\Game\GAME_inventory_manager.cs" />
      <Compile Include="Assets\01_Scripts\Game\GAME_manager.cs" />
@@ -400,16 +401,16 @@
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
  </Reference>
  <Reference Include="Pathfinding.Ionic.Zip.Reduced">
- <HintPath>/Users/michael/Documents/GGJ2019/ggj_2019/Assets/AstarPathfindingProject/Plugins/DotNetZip/Pathfinding.Ionic.Zip.Reduced.dll</HintPath>
+ <HintPath>/Users/michael/Documents/GGJ/ggj_2019/Assets/AstarPathfindingProject/Plugins/DotNetZip/Pathfinding.Ionic.Zip.Reduced.dll</HintPath>
  </Reference>
  <Reference Include="Antlr4.Runtime.Standard">
- <HintPath>/Users/michael/Documents/GGJ2019/ggj_2019/Assets/YarnSpinner/Code/Antlr4.Runtime.Standard.dll</HintPath>
+ <HintPath>/Users/michael/Documents/GGJ/ggj_2019/Assets/YarnSpinner/Code/Antlr4.Runtime.Standard.dll</HintPath>
  </Reference>
  <Reference Include="CsvHelper">
- <HintPath>/Users/michael/Documents/GGJ2019/ggj_2019/Assets/YarnSpinner/Code/CsvHelper.dll</HintPath>
+ <HintPath>/Users/michael/Documents/GGJ/ggj_2019/Assets/YarnSpinner/Code/CsvHelper.dll</HintPath>
  </Reference>
  <Reference Include="YarnSpinner">
- <HintPath>/Users/michael/Documents/GGJ2019/ggj_2019/Assets/YarnSpinner/Code/YarnSpinner.dll</HintPath>
+ <HintPath>/Users/michael/Documents/GGJ/ggj_2019/Assets/YarnSpinner/Code/YarnSpinner.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Analytics">
  <HintPath>/Users/michael/Library/Unity/cache/packages/packages.unity.com/com.unity.analytics@1.0.1/UnityEngine.Analytics.dll</HintPath>
