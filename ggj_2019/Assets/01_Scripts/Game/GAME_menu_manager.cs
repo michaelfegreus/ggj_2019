@@ -1,5 +1,7 @@
 ﻿using UnityEngine.UI;
 using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
 
 public class GAME_menu_manager : Singleton<GAME_menu_manager>  {
 
@@ -33,6 +35,23 @@ public class GAME_menu_manager : Singleton<GAME_menu_manager>  {
 
 	public string[] testOptions;
 
+	// GGJ2019
+
+	public int drunkLevel01;
+	public int drunkLevel02;
+
+	[Tooltip("Lower the value, the more likely to scramble. i.e. -- drunkPoints / scrambleRation -- (Don't set to zero, you can't divide by that!")]
+	public int scrambleRatio = 10;
+	[Tooltip("Lower the value, the more likely to give a garbage char. i.e. -- drunkPoints / scrambleRation -- (Don't set to zero, you can't divide by that!")]
+	public int garbageCharRatio = 10;
+
+	GAME_global_variables globalVariables;
+	void Start(){
+		// Should just be attached the Game Manager so grab this.
+		globalVariables = GetComponent<GAME_global_variables> ();
+	}
+
+
 	// This function gets called from outside scripts and GameObjects to set up a menu.
 	public void SetMenu(string[] optionArray, bool closeMenuOnSelect, OnReturnSelection newOnReturnSelection){
 		_closeMenuOnSelect = closeMenuOnSelect;
@@ -56,7 +75,9 @@ public class GAME_menu_manager : Singleton<GAME_menu_manager>  {
 		for(int i = 0; i < optionsCount; i++){ 
 			verticalSizeUnits += verticalIncreaseUnits; // Increase size of the menu box depending on how many items are on the list
 			optionSlots[i].gameObject.SetActive(true); // Activate Text fields for each option
-			optionSlots[i].text = optionArray[i]; // Put strings int he Text fields
+            // TODO: Scramble here!
+            string scrambledOption = ScrambleString(optionArray[i]);
+			optionSlots[i].text = scrambledOption; // Put strings in the Text fields
 		}
 		verticalSizeUnits = Mathf.Clamp(verticalSizeUnits, 100f, 480f); // Clamp to ensure that the text box doesn't get too big for the screen.
 		menuBox.rectTransform.SetSizeWithCurrentAnchors (RectTransform.Axis.Vertical, verticalSizeUnits);
@@ -154,7 +175,98 @@ public class GAME_menu_manager : Singleton<GAME_menu_manager>  {
 		}
 	}
 
-	/*    Using a delegate function to call from outside this class instead. Originally was setting a flag and waiting others to check it.
+    string ScrambleString(string phraseToScramble) {
+		
+		char[] phraseCharArray = phraseToScramble.ToCharArray();
+		string newPhrase = "";
+
+		List<char> letterList = new List<char> ();
+
+		// DRUNK LEVEL 01 SCRAMBLE:
+
+		if (globalVariables.alcoholPoints >= drunkLevel01) {
+			for (int i = 0; i < phraseToScramble.Length; i++) {
+				// Truncate at spaces, periods, question marks, and exclamation points.
+				if (phraseCharArray [i].Equals (' ') || phraseCharArray [i].Equals ('.') || phraseCharArray [i].Equals ('!') || phraseCharArray [i].Equals ('?')) {
+					// Scramble the  word just completed
+
+					// RNG if it scrambles or not!
+					if (globalVariables.alcoholPoints > Random.Range(0, scrambleRatio)) {
+						for (int a = 1; a < letterList.Count; a++) {
+							char temp = letterList [a];
+							int randomIndex = Random.Range (a, letterList.Count);
+							letterList [a] = letterList [randomIndex];
+							letterList [randomIndex] = temp;
+						}
+					}
+					// Add the scrambled word to the phrase.
+					for (int a = 0; a < letterList.Count; a++) {
+						newPhrase += letterList [a];
+					}
+					// Add the punctuation as seen in the containing if statement.
+					newPhrase += phraseCharArray [i];
+					// Start a new word, reset the list.
+					letterList.Clear ();
+				} else {
+					letterList.Add (phraseCharArray [i]);
+				}
+			}
+
+			// Nested if -- DRUNK LEVEL 02 SCRAMBLE:
+
+			if (globalVariables.alcoholPoints >= drunkLevel02) {
+				phraseCharArray = newPhrase.ToCharArray();
+				// Reset newPhrase
+				newPhrase = "";
+				for(int i = 0; i < phraseCharArray.Length; i++){
+					if (globalVariables.alcoholPoints > Random.Range (0, garbageCharRatio)) {
+						switch (Random.Range (0, 10)) {
+						case 0:
+							newPhrase += "?";
+							break;
+						case 1:
+							newPhrase += "?";
+							break;
+						case 2:
+							newPhrase += "?";
+							break;
+						case 3:
+							newPhrase += "$";
+							break;
+						case 4:
+							newPhrase += "%";
+							break;
+						case 5:
+							newPhrase += "&";
+							break;
+						case 6:
+							newPhrase += "@";
+							break;
+						case 7:
+							newPhrase += "+";
+							break;
+						case 8:
+							newPhrase += "=";
+							break;
+						case 9:
+							newPhrase += "-";
+							break;
+						case 10:
+							newPhrase += "#";
+							break;
+						}
+					} else {
+						newPhrase += phraseCharArray [i];
+					}
+				}
+			}
+			return newPhrase;
+		} else {
+			return phraseToScramble;
+		}
+    }
+
+    /*    Using a delegate function to call from outside this class instead. Originally was setting a flag and waiting others to check it.
 	// Function for outside scripts to call when the player makes a selection. The outside script should know what to do with this slot ID.
 	public int CheckPlayerSelectionIndex(){
 		return cursorIndex;
