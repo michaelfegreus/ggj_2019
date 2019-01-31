@@ -1,0 +1,14 @@
+title: EpilogueBad
+tags: 
+colorID: 0
+position: 0,0
+parent: 
+---
+(I can't believe Hazel left without me.)
+(Actually I can.)
+(It might be for the best though.)
+(I'm so not excited to see everyone on Monday.)
+(Wait, Monday is a holiday.)
+(Thank god.)
+<<LoadScene GameManager 0>>
+===

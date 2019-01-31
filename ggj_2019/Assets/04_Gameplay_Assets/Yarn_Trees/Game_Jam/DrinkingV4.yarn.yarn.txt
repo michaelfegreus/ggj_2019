@@ -1,0 +1,17 @@
+title: Drinking
+tags: 
+colorID: 0
+position: 0,0
+parent: 
+---
+(Should I take a drink?)
+-> Yes.
+    Yes.
+    (It tastes so bad...)
+    <<AddConfidencePoints GameManager 1>>
+    <<AddAlcoholPoints GameManager 1>>
+-> No.
+    No.
+    (I don't think I need one right now.)
+
+===

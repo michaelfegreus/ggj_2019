@@ -1,0 +1,16 @@
+title: Dog
+tags: 
+colorID: 0
+position: 0,0
+parent: 
+---
+Dog: Woof! 
+(He’s a good boy!)
+Dog: Woof! Woof!
+(I love him so much!)
+Dog: Woof! Woof! Woof!
+(He fills me with a deep sense of self worth.)
+<<AddConfidencePoints GameManager 1>>
+
+<<StopInteracting NPCDog>>
+===

@@ -1,0 +1,47 @@
+title: Rebecca
+tags: 
+colorID: 0
+position: 0,0
+parent: 
+---
+(Oh shit, her hair is so cool. And her shirt. And...wow she’s super cool.)
+(I haven’t seen her before she must be in college or something.)
+Rebecca: …
+(Oh shit I’m talking to her. Why did I walk up to her? 
+(I just...wanted to say something nice! Idiot. Uhhh, uhh, um.)
+
+-> I have some Jorgi Pearlz tees too. From their earlier work, though.
+    I have some Jorgi Pearlz tees too. From their earlier work, though.
+    Rebecca: ...are you hitting on me?
+    -> Yes?
+        Yes?
+        Rebecca: Ugh, not in the mood, new kid.
+        (Why was I acting so weird???)
+        <<AddConfidencePoints GameManager -1>>
+    -> No?
+        No?
+        Rebecca: Cool, then buzz off.
+        (Why was I acting so weird???)
+
+-> You’re really...cool.
+    You're realy...cool.
+    Rebecca: ...Thanks.
+    Rebecca: That was...blunt. 
+    Rebecca: Kind of nice, actually.
+    Rebecca: I think...people assume I’m weird, and don’t talk to me.
+    -> I like your fashion.
+        I like your fashion.
+        Rebecca: Really? People stare, not sure if that’s a good thing or not.
+        Rebecca: I like my style, that’s all that really matters, right?
+        -> Yeah, I think so.
+            Yeah, I think so.
+    -> You’re not weird.
+        You're not weird.
+    Rebecca: Ha! Thanks new kid.
+    Rebecca: Listen, if anyone fucks with you, let me know.
+    Rebecca: I’ve got dirt on ALL of them, hahaha.
+    (She’s so cool!!!)
+    <<AddConfidencePoints GameManager 1>>
+
+<<StopInteracting NPCRebecca>>
+===

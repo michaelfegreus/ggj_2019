@@ -75,6 +75,15 @@ public class YARN_ui_manager : Yarn.Unity.DialogueUIBehaviour
 	/// dialogue is active and to restore them when dialogue ends
 	public RectTransform gameControlsContainer;
 
+	// Text scroll sound.
+	public AudioSource blipSound;
+	bool alternateBlip;
+	// Currently playing NPC ditty
+	AudioSource currentNPCDitty;
+
+	// Sounds to mute when talking
+	public AudioSource[] bgmTracks;
+
 	void Awake ()
 	{
 		// Start by hiding the container, line and option buttons
@@ -105,6 +114,15 @@ public class YARN_ui_manager : Yarn.Unity.DialogueUIBehaviour
 			foreach (char c in line.text) {
 				stringBuilder.Append (c);
 				lineText.text = stringBuilder.ToString ();
+				if (blipSound != null) {
+					if (alternateBlip) {
+						blipSound.Play ();
+						alternateBlip = false;
+					}else{
+						alternateBlip = true;
+					}
+
+				}
 				yield return new WaitForSeconds (textSpeed);
 			}
 		} else {
@@ -215,6 +233,11 @@ public class YARN_ui_manager : Yarn.Unity.DialogueUIBehaviour
 			gameControlsContainer.gameObject.SetActive(false);
 		}
 
+		// Mute dialogue tracks
+		for (int i = 0; i < bgmTracks.Length; i++) {
+			bgmTracks [i].mute = true;
+		}
+
 		yield break;
 	}
 
@@ -235,7 +258,24 @@ public class YARN_ui_manager : Yarn.Unity.DialogueUIBehaviour
 		// Set the player in the free state
 		PLAYER_manager.Instance.EnterFreeState();
 
+		// GGJ2019 End the NPC ditty if the dialgue has ended early.
+		if (currentNPCDitty != null) {
+			if (currentNPCDitty.isPlaying) {
+				currentNPCDitty.Stop ();
+			}
+		}
+
+		// Un-mute dialogue tracks
+		for (int i = 0; i < bgmTracks.Length; i++) {
+			bgmTracks [i].mute = false;
+		}
+
 		yield break;
+	}
+
+	// For GGJ Ditties
+	public void SetDittyAudioSource(AudioSource newDitty){
+		currentNPCDitty = newDitty;
 	}
 
 }

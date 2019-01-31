@@ -1,0 +1,166 @@
+title: Theo
+tags: 
+colorID: 0
+position: 0,0
+parent: 
+---
+<<if visited("Theo")>>
+    [[Theo2]]
+<<endif>>
+
+Theo: I’m so screwed. 
+Theo: I’m taking the SAT tomorrow but I’m here instead of studying. 
+Theo: Idiot. 
+Theo: You! Help me with these practice questions. Please!!!
+    -> Sure!
+        Sure!
+        Theo: Thanks, you’re saving my future self!
+        Theo: Ok here’s a question…
+        Theo: Is this sentence correct? “Hunger is a problem that effects millions worldwide.” 
+            ->Yes.
+                Yes.
+                Theo: No, it should be “affects!”
+                Theo: Are you trying to destroy my future?! 
+                Theo: First I fail the SAT. Then I don’t get into college. 
+                Theo: Then my future wife divorces me for spending our life savings on idol gashapon mobile games.  
+                (The SAT really sucks…)
+                <<AddConfidencePoints GameManager -1>>
+            ->No.
+                No.
+                Theo: You’re totally right, it should be “affects”!
+                Theo: Good eye new kid. 
+                Theo: Thanks for helping me study at a party of all places.
+                Theo: A lot of people wouldn’t have. 
+                (He seems less stressed out now.)
+                <<AddConfidencePoints GameManager 1>>
+    -> No thanks.
+        No thanks. 
+        Theo: I understand, most people wouldn’t want to do SAT questions during a party… 
+        (Oh no, he seems so sad…)
+        <<AddConfidencePoints GameManager -1>>
+
+
+===
+title: Theo2
+tags: 
+colorID: 0
+position: 0,0
+parent: 
+---
+<<if visited("Theo2")>>
+    [[Theo3]]
+<<endif>>
+
+    Theo: My life is a series of terrible mistakes. 
+    Theo: Can I please ask you an SAT question?
+    -> Sure you can.
+        Theo: You are saving my life.
+        Theo: Alright, “What is the probability of drawing an Ace or King from a deck of cards?”
+        -> 2/19 
+            Theo: Did you just pull that number out of your ass?!
+            Theo: Am I just a joke to you?!
+            Theo: Sorry. I shouldn’t get so mad...
+            Theo: I’m just...
+            Theo: My family’s great failure!
+            (Oh man, I really should have paid more attention in math class.)
+            <<AddConfidencePoints GameManager -1>>
+        -> 1/13 
+            Theo: That’s totally right!
+            Theo: I thought I was doomed, but now…
+            Theo: I am filled with hope!
+            (Oh wow, I must have really paid attention in math class that day.)
+            <<AddConfidencePoints GameManager 1>>
+        -> 5/12 
+            Theo: Did you just pull that number out of your ass?!
+            Theo: Am I just a joke to you?!
+            Theo: Sorry. I shouldn’t get so mad…
+            Theo: I’m just...
+            Theo: My family’s great failure!
+            (Oh man, I really should have paid more attention in math class.)
+            <<AddConfidencePoints GameManager -1>>
+    -> I really don’t want to.
+        Theo: Of course, it’s a party.
+        Theo: I should probably stop asking people questions.
+        (Oh no! He looks even sadder than before!)
+        <<AddConfidencePoints GameManager -1>>
+
+===
+title: Theo3
+tags: 
+colorID: 0
+position: 0,0
+parent: 
+---
+<<if visited("Band")>>
+    [[Theo4]]
+<<endif>>
+
+(It looks like they are busy right now. Maybe I can talk to them later.)
+===
+title: Theo4
+tags: 
+colorID: 0
+position: 0,0
+parent: 
+---
+<<if visited("Band4")>>
+    [[Theo5]]
+<<endif>>
+
+Theo: Sorry if I bothered you before.
+Theo: It’s crazy to ask people SAT questions at a party.
+Theo: I’ve just been so stressed.
+Theo: I shouldn’t have come to this party but…
+->But, there’s somebody here you wanted to see?
+	But, there’s somebody here you wanted to see?
+    Theo: It’s so embarrassing but- do you know Leon?
+    ->The theater kid?
+    	The theater kid?
+        Theo: No, that’s Jeffery. I’m going to get back to studying.
+        (I think I insulted him.)
+        <<AddConfidencePoints GameManager -1>>
+    ->From the band?
+    	From the band?
+        Theo: The very one.
+        ->You like him?
+        	You like him?
+            Theo: ….maybe…
+            ->I could help you out.
+            	I could help you out.
+                Theo: You would really do that for me? Thanks so much!
+                (I hope I can help him out!)
+                <<AddConfidencePoints GameManager 1>>
+            ->He seems really weird.
+            	He seems really weird.
+                Theo: Well thanks for your opinion.
+                (I think I made him mad…)
+                <<AddConfidencePoints GameManager -1>>
+            ->That’s really cool!
+            	That’s really cool!
+                 Theo: Well thanks I guess? I’m going to get back to studying.
+                 (He still seems for stressed…)
+    ->The party host? 
+    	The party host? 
+        Theo: No that’s Liam. Liam’s cool I guess, but not like that. I’m going to get back to studying.
+        (It’s not hard to remember all of these new names.)
+->But you were afraid of missing out?
+	But you were afraid of missing out?
+    Theo: Sure I guess. Sorry I’m getting too distracted. I need to get back to studying.
+     (I think he had something else on his mind.)
+
+===
+title: Theo5
+tags: 
+colorID: 0
+position: 0,0
+parent: 
+---
+Theo: Leon asked me on a date!
+Theo: Tomorrow!
+Theo: Right after my SAT!!!!!
+Theo: I’m so excited! Thank you so much!
+(For the first time all night Theo looks really calm.)
+<<AddConfidencePoints GameManager 1>>
+
+<<StopInteracting NPCTheo>>
+===

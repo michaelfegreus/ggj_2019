@@ -1,0 +1,108 @@
+title: Band
+tags: 
+colorID: 0
+position: 0,0
+parent: 
+---
+<<if visited("Band")>>
+    [[Band2]]
+<<endif>>
+
+Craig: And then we go on stage and just fuckin’ shave our heads. 
+Grace: Hell yeah, that’d be siiick!
+Leon: But what should we call our band?
+Craig: New kid, what do you think we should call our band?
+-> Windows 95.
+    Windows 95
+    Grace: I am not going to be in a band that calls themselves fuckin’ “Windows 95.”
+    Leon: Thanks, but no thanks new kid.
+    (I thought it was a good name…)
+    <<AddConfidencePoints GameManager -1>>
+-> Rip Van Twinkle.
+    Rip Van Twinkle
+    Grace: I am not going to be in a band that calls themselves fuckin’ “Rip Van Twinkle.”
+    Leon: Thanks, but no thanks new kid.
+    (I thought it was a good name…)
+    <<AddConfidencePoints GameManager -1>>
+-> The Decent Gatsby.
+    The Decent Gatsby
+    Grace: I am not going to be in a band that calls themselves fuckin’ “The Decent Gatsby.”
+    Leon: Thanks, but no thanks new kid.
+    (I thought it was a good name…)
+    <<AddConfidencePoints GameManager -1>>
+-> Oh no! We lost our instruments! 
+    Oh no! We lost our instruments!
+    Grace: I am not going to be in a band that calls themselves fuckin’ “Oh no! We lost our instruments.”
+    Leon: Thanks, but no thanks new kid.	
+    (I thought it was a good name…)
+    <<AddConfidencePoints GameManager -1>>
+-> Leon’s Giant Balls.
+    Leon’s Giant Balls 
+    Grace: Oh hell yeah that’s a sick name.
+    Craig: Leon does have giant balls!
+    Leon: My doctor says they’re perfectly normal, but I should keep my eyes on them. 
+    (I can’t believe that’s the one they liked!)
+    <<AddConfidencePoints GameManager 1>>
+
+===
+title: Band2
+tags: 
+colorID: 0
+position: 0,0
+parent: 
+---
+<<if visited("Theo4")>>
+    [[Band3]]
+<<endif>>
+
+(It looks like they are busy right now. Maybe I can talk to them later.)
+===
+title: Band3
+tags: 
+colorID: 0
+position: 0,0
+parent: 
+---
+Grace: Yo, you’re the kid that named our band...
+Grace: What was it again?
+Leon: I don't know, I'm stoned as fuck.
+Craig: What’s up?
+-> I actually have a question for Leon.
+I actually have a question for Leon.
+Leon: Oh word? Ask away.
+-> How big are your balls?
+    How big are your balls?
+    Grace: They’re huge. 
+    Leon: It’s true.
+    (I don’t think this was how I wanted this conversation to go…)
+    <<AddConfidencePoints GameManager -1>>
+-> Do you know Theo?
+    Do you know Theo?
+    Grace: DOES HE KNOW THEO!
+    Craig: HE WISHES HE KNEW THEO!
+    Grace: HAHAHAHAHAHA!
+    Leon: Guys shut up. Y-yeah I know him. What about him?
+    -> Oh nothing, just wondering.
+        Oh nothing, just wondering.
+        Leon: Oh...OK.
+        (I don’t think this was how I wanted this conversation to go…)
+        <<AddConfidencePoints GameManager -1>>
+    -> I think he would like it if you talked to him.
+        I think he would like it if you talked to him.
+        [[Band4]]
+
+<<StopInteracting NPCBand>>
+===
+title: Band4
+tags: 
+colorID: 0
+position: 0,0
+parent: 
+---
+Leon: You really think so?! I think I will!
+Grace: Hell yeah! Get your man!
+(I’m really glad I could help them!)
+<<AddConfidencePoints GameManager 1>>
+
+<<StopInteracting NPCBand>>
+===

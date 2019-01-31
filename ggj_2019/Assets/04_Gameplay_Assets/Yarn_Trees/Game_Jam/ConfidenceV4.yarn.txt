@@ -1,0 +1,17 @@
+title: ConfidenceConvo
+tags: 
+colorID: 0
+position: 0,0
+parent: 
+---
+(They're so intimidating! I need more confidence to talk to them.)
+===
+title: ConfidenceIvy
+tags: 
+colorID: 0
+position: 0,0
+parent: 
+---
+(Oh my god, it's Ivy, I can't talk to her yet, I'll look like an idiot.) 
+(I need a TON of confidence to talk to her.)
+===

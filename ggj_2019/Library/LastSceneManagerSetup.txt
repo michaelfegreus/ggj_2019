@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/03_Scenes/Game_Jam/setup_v02.unity
+- path: Assets/03_Scenes/Game_Jam/main_scene_v07.unity
   isLoaded: 1
   isActive: 1

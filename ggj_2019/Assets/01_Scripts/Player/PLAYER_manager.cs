@@ -7,19 +7,20 @@ public class PLAYER_manager : Singleton<PLAYER_manager> {
 	
 	private StateMachine playerStateMachine = new StateMachine();
 
-	[System.NonSerialized]
+	//[System.NonSerialized]
 	public PLAYER_movement_directional_2d playerMovement;
-	[System.NonSerialized]
+	//[System.NonSerialized]
 	public PLAYER_interaction playerInteraction;
-	[System.NonSerialized]
+	//[System.NonSerialized]
 	public PLAYER_animation playerAnimation;
 
 	void Start(){
-		EnterFreeState ();
-
+	//	EnterFreeState ();
+		EnterMenuState();
+		/*
 		playerMovement = GetComponent<PLAYER_movement_directional_2d> ();
 		playerInteraction = GetComponent<PLAYER_interaction> ();
-		playerAnimation = GetComponent<PLAYER_animation> ();
+		playerAnimation = GetComponent<PLAYER_animation> ();*/
 	}
 
 	void Update(){

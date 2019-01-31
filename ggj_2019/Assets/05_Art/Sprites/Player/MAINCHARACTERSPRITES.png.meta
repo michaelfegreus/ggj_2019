@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 7d1b23c6b9e7a6543b9a4bf6f2b12f19
-timeCreated: 1548551717
+timeCreated: 1548568649
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -21,6 +21,25 @@ TextureImporter:
     21300028: Sprite Sheet_14
     21300030: Sprite Sheet_15
     21300032: Sprite Sheet_16
+    21300034: MAINCHARACTERSPRITES_0
+    21300036: MAINCHARACTERSPRITES_1
+    21300038: MAINCHARACTERSPRITES_2
+    21300040: MAINCHARACTERSPRITES_3
+    21300042: MAINCHARACTERSPRITES_4
+    21300044: MAINCHARACTERSPRITES_5
+    21300046: MAINCHARACTERSPRITES_6
+    21300048: MAINCHARACTERSPRITES_7
+    21300050: MAINCHARACTERSPRITES_8
+    21300052: MAINCHARACTERSPRITES_9
+    21300054: MAINCHARACTERSPRITES_10
+    21300056: MAINCHARACTERSPRITES_11
+    21300058: MAINCHARACTERSPRITES_12
+    21300060: MAINCHARACTERSPRITES_13
+    21300062: MAINCHARACTERSPRITES_14
+    21300064: MAINCHARACTERSPRITES_15
+    21300066: MAINCHARACTERSPRITES_16
+    21300068: MAINCHARACTERSPRITES_17
+    21300070: MAINCHARACTERSPRITES_18
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -91,11 +110,20 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+  - buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Sprite Sheet_0
+      name: MAINCHARACTERSPRITES_0
       rect:
         serializedVersion: 2
         x: 426
@@ -103,13 +131,13 @@ TextureImporter:
         width: 5
         height: 5
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Sprite Sheet_1
+      name: MAINCHARACTERSPRITES_1
       rect:
         serializedVersion: 2
         x: 730
@@ -117,13 +145,13 @@ TextureImporter:
         width: 4
         height: 5
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Sprite Sheet_2
+      name: MAINCHARACTERSPRITES_2
       rect:
         serializedVersion: 2
         x: 1002
@@ -131,13 +159,13 @@ TextureImporter:
         width: 309
         height: 756
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Sprite Sheet_3
+      name: MAINCHARACTERSPRITES_3
       rect:
         serializedVersion: 2
         x: 1326
@@ -145,13 +173,13 @@ TextureImporter:
         width: 309
         height: 752
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Sprite Sheet_4
+      name: MAINCHARACTERSPRITES_4
       rect:
         serializedVersion: 2
         x: 56
@@ -159,13 +187,13 @@ TextureImporter:
         width: 291
         height: 704
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Sprite Sheet_5
+      name: MAINCHARACTERSPRITES_5
       rect:
         serializedVersion: 2
         x: 361
@@ -173,13 +201,13 @@ TextureImporter:
         width: 291
         height: 707
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Sprite Sheet_6
+      name: MAINCHARACTERSPRITES_6
       rect:
         serializedVersion: 2
         x: 664
@@ -187,13 +215,13 @@ TextureImporter:
         width: 290
         height: 708
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Sprite Sheet_7
+      name: MAINCHARACTERSPRITES_7
       rect:
         serializedVersion: 2
         x: 1639
@@ -201,13 +229,13 @@ TextureImporter:
         width: 323
         height: 737
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Sprite Sheet_8
+      name: MAINCHARACTERSPRITES_8
       rect:
         serializedVersion: 2
         x: 13
@@ -215,13 +243,13 @@ TextureImporter:
         width: 270
         height: 718
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Sprite Sheet_9
+      name: MAINCHARACTERSPRITES_9
       rect:
         serializedVersion: 2
         x: 284
@@ -229,13 +257,13 @@ TextureImporter:
         width: 268
         height: 715
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Sprite Sheet_10
+      name: MAINCHARACTERSPRITES_10
       rect:
         serializedVersion: 2
         x: 557
@@ -243,27 +271,13 @@ TextureImporter:
         width: 268
         height: 716
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Sprite Sheet_11
-      rect:
-        serializedVersion: 2
-        x: 620
-        y: 177
-        width: 272
-        height: 690
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Sprite Sheet_12
+      name: MAINCHARACTERSPRITES_11
       rect:
         serializedVersion: 2
         x: 885
@@ -271,63 +285,91 @@ TextureImporter:
         width: 265
         height: 679
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Sprite Sheet_13
+      name: MAINCHARACTERSPRITES_12
       rect:
         serializedVersion: 2
         x: 1157
-        y: 862
-        width: 524
+        y: 865
+        width: 266
+        height: 664
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MAINCHARACTERSPRITES_13
+      rect:
+        serializedVersion: 2
+        x: 1446
+        y: 871
+        width: 265
         height: 675
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Sprite Sheet_14
+      name: MAINCHARACTERSPRITES_14
       rect:
         serializedVersion: 2
-        x: 10
-        y: 181
-        width: 295
+        x: 32
+        y: 130
+        width: 296
         height: 678
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Sprite Sheet_15
+      name: MAINCHARACTERSPRITES_15
       rect:
         serializedVersion: 2
-        x: 21
-        y: 179
+        x: 44
+        y: 128
         width: 14
         height: 19
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Sprite Sheet_16
+      name: MAINCHARACTERSPRITES_16
       rect:
         serializedVersion: 2
-        x: 318
-        y: 174
+        x: 341
+        y: 123
         width: 269
         height: 685
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MAINCHARACTERSPRITES_17
+      rect:
+        serializedVersion: 2
+        x: 643
+        y: 126
+        width: 271
+        height: 690
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

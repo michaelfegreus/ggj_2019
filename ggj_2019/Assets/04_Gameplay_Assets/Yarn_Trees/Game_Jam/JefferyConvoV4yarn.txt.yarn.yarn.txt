@@ -1,0 +1,71 @@
+title: Jeffery
+tags: 
+colorID: 0
+position: 0,0
+parent: 
+---
+<<if visited("Jeffery2")>>
+    [[Jeffery3]]
+<<endif>>
+
+Jeffery: YOU HAVE SUCH AN INTERESTING FACE! THERE’S A SADNESS IN YOUR EYES… OR IS THAT LONGING? YOU WOULD HAVE BEEN PERFECT IN OUR PRODUCTION OF LES MISÉRABLES!
+-> Uh thank you? 
+    Uh thank you?
+-> That’s a weird thing to say.
+    That's a weird thing to say.
+
+Jeffery: NO PROBLEM. DO YOU WANT TO MAKE OUT?
+-> Yeah sure. 
+    Yeah sure.
+    (Ew. Why did I say yes to that? He used so much tongue)
+    <<AddConfidencePoints GameManager -1>>
+    <<StopInteracting NPCJeffery>>
+-> Could you please stop screaming?
+    [[Jeffery2]]
+
+
+
+===
+title: Jeffery2
+tags: 
+colorID: 0
+position: 0,0
+parent: 
+---
+Could you please stop screaming?
+    Jeffery: Oh man, was I really screaming? 
+    Jeffery: Thanks for letting me know, I was just using my stage voice. That is so embarrassing.
+    (Maybe he’ll stop using his stage voice in math now. Go me!)
+    <<AddConfidencePoints GameManager 1>>
+===
+title: Jeffery3
+tags: 
+colorID: 0
+position: 0,0
+parent: 
+---
+Jeffery: Talking at this volume is so liberating.
+Jeffery: I can finally say things without everyone hearing.
+Jeffery: Like I can say this.
+Jeffery: Ivy’s caught your eye huh?
+-> She’s just in my science class. 
+	She’s just in my science class. 
+    Jeffery: Just in your science class huh? Whatever you want to tell yourself.
+    (That was so embarrassing.)
+    <<AddConfidencePoints GameManager -1>>
+-> She seems really nice.
+	She seems really nice.
+    Jeffery: She is. She’s actually a good friend of mine. I think you two would really get along. 
+    -> Really?
+    	Really?
+        Jeffery: Really.
+        (JEFFERY THINKS WE WOULD GET ALONG)
+        <<AddConfidencePoints GameManager 1>>
+-> Who her? No. No… No.
+	Who her? No. No… No.
+    Jeffery: Well then I guess I mistaken. 
+    (That was so embarrassing.)
+    <<AddConfidencePoints GameManager -1>>
+
+<<StopInteracting NPCJeffery>>
+===

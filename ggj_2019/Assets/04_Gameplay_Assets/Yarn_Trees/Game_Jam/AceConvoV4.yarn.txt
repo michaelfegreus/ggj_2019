@@ -1,0 +1,77 @@
+title: Ace
+tags: 
+colorID: 0
+position: 0,0
+parent: 
+---
+<<if visited("Ace")>>
+    [[Ace2]]
+<<endif>>
+
+Ace: So you think your cool enough to approach me, tsk. 
+Ace: I bet you haven’t even watched Legend of the Galactic Heroes. 
+Ace: Don’t know what that is? 
+Ace: It’s an anime, the highest form of art.
+Ace: Hmmf. 
+Ace: You’ve probably never heard of it.
+    -> I know what anime is?
+        I know what anime is?
+Ace: I consider myself a real sommelanime. 
+Ace: There’s no chance you can match my knowledge. 
+Ace: For instance, what is the name of Naruto’s kid?
+    -> His daughter is Rawruto.
+        His daughter is Rawruto.
+        Ace: Do you think anime is some sort of joke. I must laugh HAHAHAHAHAHA.
+        Ace: At you. You are the joke. Baka. 
+        (His insults cut to my core…)
+        <<AddConfidencePoints GameManager -1>>
+    -> His son is Boruto.
+        His son is Boruto.
+        Ace: Hmm. You’re better than I thought.
+        Ace: But do you know the answer to this EXTREMELY challenging question? 
+        Ace: What is the nickname given to every main character in the greatest anime ever, JoJo’s Bizarre Adventure?
+        -> Obviously it’s just HoHo.
+            Obviously it’s just HoHo.
+            Ace: That’s a Pokémon you fool. I knew you couldn't match my wits, tsk. 
+            (His insults cut to my core…)
+            <<AddConfidencePoints GameManager -1>>
+        -> I think it’s just OhNo Jr.
+            I think it’s just OhNo Jr.
+            Ace: You have fallen for my trap, as expected. I knew you couldn’t match my wits, tsk.
+            (His insults cut to my core…)
+            <<AddConfidencePoints GameManager -1>>
+        -> Are you serious, it’s JoJo.
+            Are you serious, it’s JoJo.
+            Ace: Huh?! You.. you… Alright. I know you won’t get this one you… you.. Punk!
+            Ace: What’s my favorite Digimon?!
+            -> Your favorite Digimon is Agumon.
+                Your favorite Digimon is Agumon.
+                Ace: A classic answer. For somebody who doesn’t know anything at all! Better luck next time.
+                (His insults cut to my core…)
+                <<AddConfidencePoints GameManager -1>>
+            -> I think it has to be Patumon.
+                I think it has to be Patumon.
+                Ace: A classic answer. For somebody who doesn’t know anything at all! Better luck next time.
+                (His insults cut to my core…)
+                <<AddConfidencePoints GameManager -1>>
+            -> Why do you want to test my anime knowledge so bad?
+                Why do you want to test my anime knowledge so bad?
+                Ace: I just wanted to bond with people about my greatest passion, but maybe I was being too harsh. 
+                Ace: Thanks for talking anime with me anyway, new kid. 
+                (Once he finally stopped talking about anime, he seemed like a nice guy!)
+                <<AddConfidencePoints GameManager 1>>
+
+
+===
+title: Ace2
+tags: 
+colorID: 0
+position: 0,0
+parent: 
+---
+Ace: I hope you don’t view me as purely one dimensional. 
+Ace: I also read manga. 
+(Of course he does)
+
+<<StopInteracting NPCAce>>
+===

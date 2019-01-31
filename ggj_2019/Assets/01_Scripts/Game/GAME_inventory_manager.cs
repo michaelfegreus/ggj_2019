@@ -1,12 +1,9 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 
-public class GAME_inventory_manager : SingletonPersistant<GAME_inventory_manager> {
+public class GAME_inventory_manager : Singleton<GAME_inventory_manager> {
 
-	protected override void Awake(){
-		base.Awake ();
-		// Can add more awake stuff below.
-	}
+
 
 
 

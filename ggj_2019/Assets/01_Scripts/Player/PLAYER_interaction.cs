@@ -61,6 +61,7 @@ public class PLAYER_interaction : MonoBehaviour {
 			foreach (IInteractable mb in interactedObjectMonobehaviors) {
 				IInteractable interactable = (IInteractable)mb;
 				interactable.OnInteract (); // This might need to get triggered at a specific frame of animation. i.e. Only remove item from the ground when the character's hand grasps it.
+				UpdateInteractableArray();
 			}
 		}
 	}
@@ -87,6 +88,11 @@ public class PLAYER_interaction : MonoBehaviour {
 	void UpdateInteractableArray(){
 		for (int i = 0; i < nearbyInteractables.Length; i++) {
 			nearbyInteractables [i] = moduleScript.moduleInteractables [i];
+			if (nearbyInteractables [i] != null) {
+				if (nearbyInteractables [i].tag != "Interactable") {
+					nearbyInteractables [i] = null;
+				}
+			}
 		}
 	}
 

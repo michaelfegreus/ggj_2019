@@ -39,7 +39,7 @@ public class PLAYER_movement_directional_2d : MonoBehaviour {
 	// Should prioritize game-feel and what looks natural -- should be subtle.
 	public float yMovementForshortenModifier;
 
-	void Start () {
+	void Awake () {
 		rb = playerMovementModule.GetComponent<Rigidbody2D> ();
 
 		currentMoveSpeed = walkSpeed;

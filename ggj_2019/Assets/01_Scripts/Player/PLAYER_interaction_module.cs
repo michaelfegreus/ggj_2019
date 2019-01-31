@@ -13,6 +13,10 @@ public class PLAYER_interaction_module : MonoBehaviour {
 		moduleInteractables = new GameObject[interactableArraySize];
 	}
 
+	void Update(){
+		
+	}
+
 
 	// Check to see if the player entered the range of interactable objects.
 	void OnTriggerEnter2D(Collider2D col){

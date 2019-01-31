@@ -1,0 +1,48 @@
+title: IvySuccess
+tags: 
+colorID: 0
+position: 0,0
+parent: 
+---
+Ivy: Hey new kid! I’m glad you could make it.
+Ivy: I’ve actually been meaning to talk to you…
+Ivy: ...but I’ve been a little nervous.
+Ivy: Which is silly, cause, you’re the new one. 
+Ivy: I was actually the new kid last year, so like, I get ya.
+Ivy: But, well...hahaha, y’know.
+-> I’m having a really good time.
+    I’m having a really good time.
+    Ivy: That’s great. You seem really comfortable here, even if you’re new.
+    Ivy: Y’know what they say: my home is your home.
+    Ivy: Well this isn’t my house but you know what I mean.
+    Ivy: I hope it feels that way, eventually!
+        -> Thank you.
+            Thank you.
+            (I think I’m going to like it here…)
+
+<<StopInteracting NPCIvy>>
+<<LoadScene GameManager 1>>
+===
+title: IvyFailure
+tags: 
+colorID: 0
+position: 0,0
+parent: 
+---
+Ivy: Hey new kid! I’m glad you could make it.
+Ivy: I’ve actually been meaning to talk to you…
+Ivy: ...but I’ve been a little nervous.
+Ivy: Which is silly, cause, you’re the new one. 
+Ivy: I was actually the new kid last year, so like, I get ya.
+Ivy: But, well...hahaha, y’know.
+->Will you marry me?
+    Will you marry me?
+    Ivy: …
+    Ivy: What?
+    Ivy: You are way too drunk.
+    Ivy: I think you need to go home. 
+    (I should definitely go home. And vomit. Vomit and go home.)
+
+<<StopInteracting NPCIvy>>
+<<LoadScene GameManager 2>>
+===

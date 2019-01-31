@@ -1,0 +1,8 @@
+title: Leave
+tags: 
+colorID: 0
+position: 0,0
+parent: 
+---
+(I can’t leave here without Hazel, she would totally kill me. Maybe even literally.)
+===

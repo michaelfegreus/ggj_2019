@@ -1,0 +1,24 @@
+title: Title
+tags: 
+colorID: 0
+position: 0,0
+parent: 
+---
+-> Start Game
+    <<LoadScene GameManager 1>>
+-> Credits
+    Producer: Rachel Braga Jones, Harry Rabinowitz
+    Narrative Design: Harry Rabinowitz, Emi Schaufeld
+    Additional Writing: Magnolia Porter
+    Game Design: Michael Fegreus, Harry Rabinowitz, Emi Schaufeld
+    Art Director: Corinne Stein
+    Color Stylist: Magnolia Porter
+    Character Design/Inking: Courtney Sanders
+    Colorist/Environment Design: Rachel Braga Jones
+    UI Design: Courtney Sanders
+    Unity Lead: Michael Fegreus
+    Unity Development: Rebecca Braga Jones
+    Composer: Trent Garlipp, Andy Bow
+    Sound Design: Trent Garlipp
+    
+===

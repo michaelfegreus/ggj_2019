@@ -1,0 +1,51 @@
+title: Couple
+tags: 
+colorID: 0
+position: 0,0
+parent: 
+---
+Thomas: No, don’t, stop talking, I’m serious.
+Rose: Listen to me!
+Thomas: We talked about this: we watch Steven Universe together. I do my homework, you come to my house, we make hot chocolate, we watch it together.
+Rose: You don’t even like the show! You were complaining about it to your friend at the movies the other night, you think it’s stupid!
+Thomas: Why would I set aside this whole night to watch a show I thought was stupid?
+Rose: Because you love being contrarian, Thomas.
+Thomas: Do not.
+Rose: Do too.
+    
+-> He’s right, you shouldn’t have watched the show without him.
+    He’s right, you shouldn’t have watched the show without him.
+    Rose: I...it was the season finale, and I was just really excited. I’m sorry babe, I always do this, I’m so selfish, I just…
+    Thomas: Rose, hey, don’t be so hard on yourself.
+    (They both just seem sad now.)
+    <<AddConfidencePoints GameManager -1>>
+
+-> She’s right, you don’t even like the show. And it was the season finale.
+    She’s right, you don’t even like the show. And it was the season finale.
+    Thomas: That’s not the point!
+    Rose: Isn’t it though?
+    Thomas: I...but...I do like the show.
+    Thomas: I’m just embarrassed about it.
+    Rose: ...I didn’t know that. You could have lead with that…
+    (They both just seem sad now.)
+    <<AddConfidencePoints GameManager -1>>
+
+-> What kind of hot chocolate do you make?
+    What kind of hot chocolate do you make?
+    Thomas: Oh, it’s this super good powder from the co-op behind school.
+    Rose: It’s SUPER expensive, but it’s super worth it.
+    Thomas: It reminds me of when my mom would make hot coco during blizzards
+    Rose: My dad would make some when we watched new movies.
+        -> My sister makes some for the holidays.
+            My sister makes some for the holidays.
+            Rose: Chocolate feels like home.
+            (I hope sis makes me hot chocolate for the holidays this year!)
+            <<AddConfidencePoints GameManager 1>>
+        -> My mom makes some for my birthdays.
+            My mom makes some for my birthdays.
+            Rose: Chocolate feels like home.
+            (I hope mom makes me hot chocolate for my birthday this year!)
+            <<AddConfidencePoints GameManager 1>>
+
+<<StopInteracting NPCCouple>>
+===

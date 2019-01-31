@@ -8,7 +8,7 @@
 [RequireComponent(typeof(YARN_ui_manager))] // Yarn component
 [RequireComponent(typeof(GAME_global_variables))] // GGJ2019 game state variabes
 
-public class GAME_manager : SingletonPersistant<GAME_manager> {
+public class GAME_manager : Singleton<GAME_manager> {
 
 	// Instantiate personal state machine
 	private StateMachine gameStateMachine = new StateMachine();
@@ -17,10 +17,10 @@ public class GAME_manager : SingletonPersistant<GAME_manager> {
 	// Without this, the engine might just run GAME_manager's Awake, and not the SingletonPersistant's awake that keeps it from being destroyed
 
 	// Delete this function if you're not using the SingletonPersistant interface though.
-	protected override void Awake(){
+	/*protected override void Awake(){
 		base.Awake ();
 		// Can add more awake stuff below.
-	}
+	}*/
 
 
 
@@ -38,6 +38,8 @@ public class GAME_manager : SingletonPersistant<GAME_manager> {
 	public ExampleVariableStorage variableStorageManager;
 	[System.NonSerialized]
 	public YARN_ui_manager yarnUIManager;
+	[System.NonSerialized]
+	public GAME_global_variables globalVariables;
 
 	void Start(){
 		EnterFreeState ();
@@ -48,6 +50,7 @@ public class GAME_manager : SingletonPersistant<GAME_manager> {
 		dialogRunner = GetComponent<Yarn.Unity.DialogueRunner> ();
 		variableStorageManager = GetComponent<ExampleVariableStorage> ();
 		yarnUIManager = GetComponent<YARN_ui_manager> ();
+		globalVariables = GetComponent<GAME_global_variables> ();
 	}
 
 

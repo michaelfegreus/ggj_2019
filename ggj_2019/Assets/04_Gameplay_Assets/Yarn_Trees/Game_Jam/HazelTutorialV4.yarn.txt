@@ -1,0 +1,33 @@
+title: Hazel
+tags: 
+colorID: 0
+position: 0,0
+parent: 
+---
+Hazel: C’mon, don’t be such a stick in the mud! 
+Hazel: You’re new, and this party is the perfect chance to meet people. 
+Hazel: Besides, you already came all this way.
+-> You forced me to come, dude. (Select with Z key.)
+You forced me to come, dude.
+Hazel: If you keep up with that attitude, you’re gonna have no confidence. 
+Hazel: You’ll just be a sad little worm. Nobody likes a sad little worm. 
+-> A sad little worm sounds kind of cute… 
+Hazel: STOP…
+-> ...Fine, you’re right.  But I’m not happy about it.
+Fine, you’re right.  But I’m not happy about it.
+Hazel: That’s the spirit! Now, you need to talk to that cute girl, Ivy, from science class.
+-> ...Do you really think I can…? 
+...Do you really think I can…?
+Hazel: Sure I do! Just walk up an press Z, just like with anyone else!
+(...)
+Hazel: ...Well, you might need to work up your confidence first. Go meet some people, and when you're feeling good enough, just talk to her.
+Hazel: But I believe in you. Because you have the most important thing--
+Hazel: Hold that thought. My girlfriend’s calling me. 
+Hazel: Uhhh… 
+Hazel: Good luck! 
+
+(She’s right, I should make friends here, but it’s so hard to talk to new people.)
+(I wish I was home.)
+
+<<StopInteracting NPCHazel>>
+===

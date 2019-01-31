@@ -6,7 +6,7 @@ using UnityEngine.Events;
 
 public class DrunkCamera : MonoBehaviour {
 
-    public int DrunkLevel = 0;
+    int DrunkLevel = 0;
     private float WorkingDrunkLevel;
     public CinemachineVirtualCamera VirtualCamera;
     private CinemachineBasicMultiChannelPerlin virtualCameraNoise;
@@ -19,8 +19,10 @@ public class DrunkCamera : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
+		DrunkLevel = GAME_manager.Instance.globalVariables.alcoholPoints;
+
                 float WorkingDrunkLevel = (float)DrunkLevel;
-                WorkingDrunkLevel = WorkingDrunkLevel * .2f;
+                WorkingDrunkLevel = WorkingDrunkLevel * .13f;
                 virtualCameraNoise.m_AmplitudeGain = WorkingDrunkLevel;
                 virtualCameraNoise.m_FrequencyGain = WorkingDrunkLevel;
     }

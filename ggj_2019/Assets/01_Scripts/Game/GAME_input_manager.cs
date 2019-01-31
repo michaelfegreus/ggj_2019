@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class GAME_input_manager : SingletonPersistant<GAME_input_manager> {
+public class GAME_input_manager : Singleton<GAME_input_manager> {
 
 	// Action button options:
 	public KeyCode actionButton1;
@@ -22,9 +22,5 @@ public class GAME_input_manager : SingletonPersistant<GAME_input_manager> {
 	public KeyCode itemUseButton1;
 	public KeyCode itemUseButton2;
 
-	protected override void Awake(){
-		base.Awake ();
-		// Can add more awake stuff below.
-	}
 
 }
